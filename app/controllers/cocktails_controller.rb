@@ -1,4 +1,4 @@
-class CocktailController < ApplicationController
+class CocktailsController < ApplicationController
     # FILTER (Execute set_cocktail method)
     before_action :set_cocktail, only: [:show, :edit, :update, :destroy]
 

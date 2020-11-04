@@ -1,37 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="https://cocktailshow.herokuapp.com/cocktails">Cocktails</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://cocktailshow.herokuapp.com/cocktails">Home <span class="sr-only">(current)</span></a>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'cocktails.jpg' %>')">
-  <div class="banner-content">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <h1 class="text-center #F4F4F4">Cocktails</h1>
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-    <br class="visible-xl">
-      
-  </div>
-</div>
+<h1 class="text-center mt-5">Cocktails</h1>      
 
   <div class='container mt-4'>  
     <ul>
@@ -39,6 +6,5 @@
         <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
       <% end %>
     </ul>  
-
     <%= link_to 'New cocktail', new_cocktail_path, class: "btn btn-primary" %>
   </div>
